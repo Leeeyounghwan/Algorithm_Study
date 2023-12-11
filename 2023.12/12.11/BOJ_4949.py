@@ -20,7 +20,7 @@ while True:
                 stack.append("]")
                 break
         elif i == ")":
-            if len(stack) != 0 and stack[-1] == "[":
+            if len(stack) != 0 and stack[-1] == "(":
                 stack.pop()
             else:
                 stack.append(")")
